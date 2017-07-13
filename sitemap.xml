@@ -10,7 +10,7 @@
 <loc>/expertise/death-and-terminal-illness-claims/another-page/</loc>
 </url>
 <url>
-<loc>/blog/</loc>
+<loc>/blog/blog-item/</loc>
 </url>
 <url>
 <loc>/contact/</loc>
@@ -19,10 +19,13 @@
 <loc>/</loc>
 </url>
 <url>
-<loc>/expertise/</loc>
+<loc>/blog/</loc>
 </url>
 <url>
 <loc>/expertise/death-and-terminal-illness-claims/</loc>
+</url>
+<url>
+<loc>/expertise/</loc>
 </url>
 <url>
 <loc>/our-people/</loc>
