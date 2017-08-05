@@ -13,8 +13,14 @@
     <!-- PAGE LOADER -->
     <div id="lv-page-loader" class="lv-page-loader">
         <div class="lv-page-loader-spinner">
-            <div class="double-bounce-1"></div>
-            <div class="double-bounce-2"></div>
+            <div class="loader-spinner">
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -22,7 +28,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2000);
@@ -252,16 +258,15 @@
         <!-- /.lv-hero-wrapper -->
         <nav class="breadcrumb">
             <div class="container">
-
-                <!-- <span class="float-left mr-1"><i class="fa fa-arrow-circle-left"></i>&nbsp; Back to</span> -->
-                
-<!-- <a class="breadcrumb-item" href="/">Home</a> --><a class="breadcrumb-item" href="/expertise/">
-                    <i class="fa fa-angle-left"></i>&nbsp; Back to Expertise</a>
+                <a class="breadcrumb-item" href="/expertise/">
+                    <i class="fa fa-angle-left"></i>&nbsp; Back to
+                    <span class="text-capitalize">expertise</span>
+                </a>
                 <a class="breadcrumb-item" href="/expertise/death-and-terminal-illness-claims/">
-                    <i class="fa fa-angle-left"></i>&nbsp; Back to Death and terminal illness claims</a>
-
-                <!-- <span class="breadcrumb-item">another page</span> -->
-                </div>
+                    <i class="fa fa-angle-left"></i>&nbsp; Back to
+                    <span class="text-capitalize">death and terminal illness claims</span>
+                </a>
+            </div>
         </nav>
 
         <!-- CONTENT -->
@@ -275,41 +280,41 @@
                             <div class="ml-lg-5">
                                 <h1 class="display-2 mb-4">Another Page</h1>
                                 <p class="h5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-                                <div class="wysiwyg">
+
+                                <!-- WYSIWYG -->
+                                <div class="wysiwyg mb-4">
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Link example </p>
                                     <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
                                     <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.</p>
-                                    <br>
-                                    <h3>Also in this section</h3>
-                                    <hr>
-                                    <p>
-                                        <h3>
-                                            <a href="/">Another Page</a>
-                                        </h3>
-                                    </p>
-                                    <p>
-                                        <h3>
-                                            <a href="/">Second Level Page</a>
-                                        </h3>
-                                    </p>
-                                    <p>
-                                        <h3>
-                                            <a href="/">Page Example</a>
-                                        </h3>
-                                    </p>
-                                    <br>
                                 </div>
+                                <h3>Also in this section</h3>
+                                <hr>
+                                <p>
+                                    <h3>
+                                        <a href="/">Another Page</a>
+                                    </h3>
+                                </p>
+                                <p>
+                                    <h3>
+                                        <a href="/">Second Level Page</a>
+                                    </h3>
+                                </p>
+                                <p>
+                                    <h3>
+                                        <a href="/">Page Example</a>
+                                    </h3>
+                                </p>
+                                <br>
                             </div>
                         </div>
                         <div class="col-lg-3 pull-lg-9">
                             <aside class="sidebar">
                                 <ul class="side-nav">
                                     <li class="active-parent">
-                                        <a href="/expertise/" class="d-none">Expertise</a>
+                                        <a href="/expertise/" class="">Expertise</a>
                                         <ul>
                                             <li class="">
                                                 <a href="#/expertise/">TDP & Income Protection Claims</a>
-                                                <ul></ul>
                                             </li>
                                             <li class="active-parent">
                                                 <a href="/expertise/death-and-terminal-illness-claims/">Death & Terminal Illness Claims</a>
@@ -327,15 +332,12 @@
                                             </li>
                                             <li class="">
                                                 <a href="#/expertise/">Superannuation & Insurance</a>
-                                                <ul></ul>
                                             </li>
                                             <li class="">
                                                 <a href="#/expertise/">General Insurance</a>
-                                                <ul></ul>
                                             </li>
                                             <li class="">
                                                 <a href="#/expertise/">Financial Advice Disputes</a>
-                                                <ul></ul>
                                             </li>
                                         </ul>
                                     </li>
@@ -347,7 +349,7 @@
             </section>
 
             <!-- CONTACT -->
-            <section class="section inverse has-image-bg" style="background-image: url(/assets/img/content/hero/hero-4.jpg">
+            <section class="section inverse has-image-bg is-tinted" style="background-image: url(/assets/img/content/hero/hero-4.jpg">
                 <div class="container text-center">
                     <div class="row justify-content-center">
                         <div class="col-lg-10 col-xl-8">
@@ -509,10 +511,7 @@
                     <div class="row">
                         <div class="col-6">
                             <small>
-
-                                <!-- &copy; 2017&nbsp;&nbsp;&nbsp; -->
-                                
-<!-- <a data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a> --><a href="/docs/">Docs</a>
+                                <a href="/docs/">Docs</a>
                             </small>
                         </div>
                         <div class="col-6 text-right">

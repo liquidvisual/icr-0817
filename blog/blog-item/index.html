@@ -13,8 +13,14 @@
     <!-- PAGE LOADER -->
     <div id="lv-page-loader" class="lv-page-loader">
         <div class="lv-page-loader-spinner">
-            <div class="double-bounce-1"></div>
-            <div class="double-bounce-2"></div>
+            <div class="loader-spinner">
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -22,7 +28,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2000);
@@ -235,7 +241,7 @@
 
             <!-- HERO -->
             <div class="lv-hero has-height-preset-1">
-                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-1-placeholder.png')">
+                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-6.jpg')">
 
                     <!-- HERO CAPTION -->
                     <div class="container">
@@ -252,14 +258,11 @@
         <!-- /.lv-hero-wrapper -->
         <nav class="breadcrumb">
             <div class="container">
-
-                <!-- <span class="float-left mr-1"><i class="fa fa-arrow-circle-left"></i>&nbsp; Back to</span> -->
-                
-<!-- <a class="breadcrumb-item" href="/">Home</a> --><a class="breadcrumb-item" href="/blog/">
-                    <i class="fa fa-angle-left"></i>&nbsp; Back to Blog</a>
-
-                <!-- <span class="breadcrumb-item">blog item</span> -->
-                </div>
+                <a class="breadcrumb-item" href="/blog/">
+                    <i class="fa fa-angle-left"></i>&nbsp; Back to
+                    <span class="text-capitalize">blog</span>
+                </a>
+            </div>
         </nav>
 
         <!-- CONTENT -->
@@ -273,25 +276,32 @@
                             <div class="ml-lg-5">
                                 <h1 class="display-2 mb-4">What's the Deal with Airline Peanuts?</h1>
                                 <p class="h5"></p>
-                                <div class="wysiwyg">
-                                    <p>
-                                        <date class="text-muted">12 AUGUST 2015</date>
-                                    </p>
-                                    <br>
-                                    <p class="img-right">
-                                        <img width="100%" src="http://placehold.it/350x260" alt="...">
-                                    </p>
+                                <p class="text-muted">
+                                    <i class="fa fa-clock-o"></i>
+                                    <date>12 AUGUST 2015</date>
+                                    <span class="mx-2">|</span>
+                                    <i class="fa fa-user"></i>
+                                    <a href="/our-people/our-people-item/">John Smith</a>
+                                </p>
+                                <br>
+                                <p class="image-right">
+                                    <img width="100%" src="http://placehold.it/350x260" alt="...">
+                                </p>
+
+                                <!-- WYSIWYG -->
+                                <div class="wysiwyg mb-4">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!</p>
                                     <p>aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis officia veritatis maxime at necessitatibus, quasi eligendi!</p>
                                     <p>aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis maxime at necessitatibus, quasi eligendi!</p>
                                     <p>aecati odit, accusamus. At libero ipsam consectetur, iusto autem non excepturi doloribus voluptas architecto dolorum fugiat esse necessitatibus placeat, incidunt ipsum quisquam deleniti fugit aliquid numquam quas rem commodi nobis officia veritatis animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore! officia veritatis animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore! animi! Dolorum deserunt laborum nobis dolor voluptate a eaque rerum omnis sequi quaerat non accusantium nisi, commodi molestias, adipisci impedit neque dignissimos? Laudantium a hic aut explicabo consequuntur! Voluptas ab nesciunt aperiam nisi eligendi saepe, dolor illum id, necessitatibus, labore inventore!</p>
-                                    <br>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 pull-lg-9">
                             <aside class="sidebar">
-                                <h3 class="mb-4">Previous News</h3>
+
+                                <!-- RECENT POSTS -->
+                                <h3 class="mb-4">Recent Posts</h3>
                                 <div class="mr-md-3">
                                     <a href="/news/news-item/">
                                         <h4 class="h6 mb-0 text-capitalize">That's Pie Country. They Do a Lot of Baking Up There.</h4>
@@ -397,10 +407,7 @@
                     <div class="row">
                         <div class="col-6">
                             <small>
-
-                                <!-- &copy; 2017&nbsp;&nbsp;&nbsp; -->
-                                
-<!-- <a data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a> --><a href="/docs/">Docs</a>
+                                <a href="/docs/">Docs</a>
                             </small>
                         </div>
                         <div class="col-6 text-right">

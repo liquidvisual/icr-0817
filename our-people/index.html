@@ -13,8 +13,14 @@
     <!-- PAGE LOADER -->
     <div id="lv-page-loader" class="lv-page-loader">
         <div class="lv-page-loader-spinner">
-            <div class="double-bounce-1"></div>
-            <div class="double-bounce-2"></div>
+            <div class="loader-spinner">
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -22,7 +28,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2000);
@@ -235,7 +241,7 @@
 
             <!-- HERO -->
             <div class="lv-hero has-height-preset-1">
-                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-1-placeholder.png')">
+                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-5.jpg')">
 
                     <!-- HERO CAPTION -->
                     <div class="container">
@@ -256,15 +262,176 @@
             <!-- BODY -->
             <section class="section">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9">
-                            <p class="h5 text-center"></p>
-                            <div class="spacer mb-4"></div>
-                            <div class="wysiwyg">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="block-grid-md-2 block-grid-lg-4 mb-5">
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="That's Pie Country. They Do a Lot of Baking Up There.">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="What's the Deal with Airline Peanuts?">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="Nothing's Finer Than Being in Your Diner">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="Yadda Yadda Yadda">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="These Pretzels are Making Me Thirsty!">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="Is Anyone Here a Marine Biologist?">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="I Always Wanted to Pretend I Was an Architect">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/our-people/our-people-item/" class="btn-tile">
+                                <article class="media-article">
+
+                                    <!-- IMAGE -->
+                                    <div class="btn-tile-img mb-3">
+                                        <img width="100%" src="/assets/img/ui/no-face.png" alt="It's the Summer of George">
+                                        <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                    </div>
+
+                                    <!-- HEADING -->
+                                    <h5 class="mb-2">John Smith</h5>
+
+                                    <!-- BODY (TRUNCATE 150 chars) -->
+                                    <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                    <span class="anchor-link">Read More
+                                        <i class="fa fa-angle-right"></i>
+                                    </span>
+                                </article>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
@@ -344,10 +511,7 @@
                     <div class="row">
                         <div class="col-6">
                             <small>
-
-                                <!-- &copy; 2017&nbsp;&nbsp;&nbsp; -->
-                                
-<!-- <a data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a> --><a href="/docs/">Docs</a>
+                                <a href="/docs/">Docs</a>
                             </small>
                         </div>
                         <div class="col-6 text-right">

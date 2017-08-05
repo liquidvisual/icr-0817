@@ -13,8 +13,14 @@
     <!-- PAGE LOADER -->
     <div id="lv-page-loader" class="lv-page-loader">
         <div class="lv-page-loader-spinner">
-            <div class="double-bounce-1"></div>
-            <div class="double-bounce-2"></div>
+            <div class="loader-spinner">
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -22,7 +28,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2000);
@@ -257,9 +263,11 @@
             <section class="section">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-md-9">
-                            <p class="h5 text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                        <div class="col-lg-9">
+                            <p class="h5 text-center px-xl-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
                             <div class="spacer mb-4"></div>
+
+                            <!-- WYSIWYG -->
                             <div class="wysiwyg">
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
                                     <a href="/">Link example</a>
@@ -277,7 +285,7 @@
                     <h2 class="text-center">Our Expertise</h2>
                     <ul class="block-grid-xs-1 block-grid-md-2 px-lg-5 block-grid-condensed">
                         <li>
-                            <a class="btn-cta" href="/expertise/expertise-item/">
+                            <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                 <h3>
                                     <span class="text">TDP & Income Protection Claims</span>
                                     <i class="fa fa-angle-right"></i>
@@ -285,7 +293,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="btn-cta" href="/expertise/expertise-item/">
+                            <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                 <h3>
                                     <span class="text">Death & Terminal Illness Claims</span>
                                     <i class="fa fa-angle-right"></i>
@@ -293,7 +301,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="btn-cta" href="/expertise/expertise-item/">
+                            <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                 <h3>
                                     <span class="text">Superannuation & Insurance</span>
                                     <i class="fa fa-angle-right"></i>
@@ -301,7 +309,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="btn-cta" href="/expertise/expertise-item/">
+                            <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                 <h3>
                                     <span class="text">General Insurance</span>
                                     <i class="fa fa-angle-right"></i>
@@ -309,7 +317,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="btn-cta" href="/expertise/expertise-item/">
+                            <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                 <h3>
                                     <span class="text">Financial Advice Disputes</span>
                                     <i class="fa fa-angle-right"></i>
@@ -482,10 +490,7 @@
                     <div class="row">
                         <div class="col-6">
                             <small>
-
-                                <!-- &copy; 2017&nbsp;&nbsp;&nbsp; -->
-                                
-<!-- <a data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a> --><a href="/docs/">Docs</a>
+                                <a href="/docs/">Docs</a>
                             </small>
                         </div>
                         <div class="col-6 text-right">

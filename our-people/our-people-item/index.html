@@ -13,8 +13,14 @@
     <!-- PAGE LOADER -->
     <div id="lv-page-loader" class="lv-page-loader">
         <div class="lv-page-loader-spinner">
-            <div class="double-bounce-1"></div>
-            <div class="double-bounce-2"></div>
+            <div class="loader-spinner">
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -22,7 +28,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2000);
@@ -235,12 +241,12 @@
 
             <!-- HERO -->
             <div class="lv-hero has-height-preset-1">
-                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-1-placeholder.png')">
+                <div class="lv-hero-item" style="background-image: url('/assets/img/content/hero/hero-5.jpg')">
 
                     <!-- HERO CAPTION -->
                     <div class="container">
                         <div class="lv-hero-item-caption text-center">
-                            <h1>John Berrill</h1>
+                            <h2 class="h1">Our People</h2>
                         </div>
                     </div>
                 </div>
@@ -250,19 +256,155 @@
             </div>
 
         <!-- /.lv-hero-wrapper -->
-        
-<!-- CONTENT --><main class="content">
+        <nav class="breadcrumb">
+            <div class="container">
+                <a class="breadcrumb-item" href="/our-people/">
+                    <i class="fa fa-angle-left"></i>&nbsp; Back to
+                    <span class="text-capitalize">our people</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- CONTENT -->
+        <main class="content">
 
             <!-- BODY -->
             <section class="section">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9">
-                            <p class="h5 text-center"></p>
-                            <div class="spacer mb-4"></div>
-                            <div class="wysiwyg">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+
+                            <!-- PHOTO -->
+                            <div class="hidden-sm-down">
+                                <p>
+                                    <img width="100%" src="/assets/img/ui/no-face.png" alt="Profile Photo">
+                                </p>
+                                <p>
+                                    <a class="icon-link d-inline-flex" href="mailto:john.smith@email-address.com">
+                                        <i class="fa fa-envelope mr-2"></i>
+                                        <span class="text">john.smith@email-address.com</span>
+                                    </a>
+                                </p>
                             </div>
+                        </div>
+                        <div class="col-md-8 col-lg-9 pl-md-4 px-lg-4 px-xl-5">
+
+                            <!-- HEADING -->
+                            <h1 class="h2">John Smith</h1>
+                            <p class="lead mb-4">
+                                <b>Deb has over 30 years' experience in the Banking and Finance industry, in South Africa and Australia, with a proven track record of facilitating positive outcomes for business and individuals.</b>
+                            </p>
+
+                            <!-- PHOTO -->
+                            <div class="hidden-md-up">
+                                <p>
+                                    <img width="100%" src="/assets/img/ui/no-face.png" alt="Profile Photo">
+                                </p>
+                                <p>
+                                    <a class="icon-link d-inline-flex" href="mailto:john.smith@email-address.com">
+                                        <i class="fa fa-envelope mr-2"></i>
+                                        <span class="text">john.smith@email-address.com</span>
+                                    </a>
+                                </p>
+                            </div>
+                            <p>Deb is an internationally experienced Executive and Director with a focus on providing sustainable solutions to challenges within the profit and not for profit sectors. As a consultant Deb understands the benefit of providing services to organisations to ensure productive team dynamics and provides training and workshops to promote team communication and improve productivity. Deb also provides strategic planning and professional mentoring services.</p>
+                            <p>Deb is a Resolution Institute (LEADR/IAMA) nationally accredited Mediator and utilises blended processes of dispute resolution, including facilitative mediation and transformative mediation. Deb focusses on assisting parties maintain constructive working relationships. Deb assists organisations and individuals develop skills to understand and manage conflict in a constructive manner to minimise impact on individuals and workplace dynamics.</p>
+                            <p>Deb’s expertise covers industrial relations, sustainable change management, workforce development, leadership development, innovation and strategy, risk management, Work Health and Safety and conflict resolution and conflict coaching. In addition, Deb is an Australian Human Resource Institute (AHRI) mentor and a Registered Agent under the South Australian Fair Work Act 1994.</p>
+                            <div class="spacer mb-3"></div>
+
+                            <!-- QUALIFICATIONS / TRAINING -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h3 class="h4">Qualifications</h3>
+                                    <ul class="wysiwyg">
+                                        <li>Bachelor of Social Science – Major: Human Services - UniSA</li>
+                                        <li>Grad Cert in Mediation - UniSA</li>
+                                        <li>Diploma of Vocational Education and Training - TafeSA</li>
+                                        <li>Diploma - Australian Institute of Company Directors -AICD</li>
+                                        <li>Diploma Professional Counselling - AIPC</li>
+                                        <li>Cert IV Work Health Safety -TafeSA</li>
+                                    </ul>
+                                    <div class="spacer mb-3"></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="h4">Further training, accreditation and memberships</h3>
+                                    <ul class="wysiwyg">
+                                        <li>UniSA Golden Key International Honour Society</li>
+                                        <li>Graduate Member - Australian Institute of Company Directors</li>
+                                        <li>Graduate member - Australian Institute of Professional Counsellors</li>
+                                        <li>Chair SA Chapter – Resolution Institute (LEADR/IAMA)</li>
+                                        <li>Member – Australian Human Resource Institute (CAHRI)</li>
+                                        <li>Member – Australasian Association of Workplace Investigators</li>
+                                        <li>Resolution Institute (LEADR/IAMA) – NMAS Accredited Mediator</li>
+                                        <li>Member - Australian Counselling Association (NP)</li>
+                                        <li>Member - Women on Boards</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ALSO IN OUR TEAM -->
+            <section class="section section-light">
+                <div class="container">
+                    <h2 class="text-center">Also in our team</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 col-xl-8">
+                            <ul class="block-grid-md-3 mb-4">
+                                <li>
+                                    <a href="/our-people/our-people-item/" class="btn-tile">
+                                        <article class="media-article">
+                                            <div class="btn-tile-img mb-3">
+                                                <img width="100%" src="/assets/img/ui/no-face.png" alt="That's Pie Country. They Do a Lot of Baking Up There.">
+                                                <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                            </div>
+                                            <h5 class="mb-2">John Smith</h5>
+
+                                            <!-- TRUNCATE 150 chars -->
+                                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                            <span class="anchor-link">Read More
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/our-people/our-people-item/" class="btn-tile">
+                                        <article class="media-article">
+                                            <div class="btn-tile-img mb-3">
+                                                <img width="100%" src="/assets/img/ui/no-face.png" alt="What's the Deal with Airline Peanuts?">
+                                                <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                            </div>
+                                            <h5 class="mb-2">John Smith</h5>
+
+                                            <!-- TRUNCATE 150 chars -->
+                                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                            <span class="anchor-link">Read More
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </article>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/our-people/our-people-item/" class="btn-tile">
+                                        <article class="media-article">
+                                            <div class="btn-tile-img mb-3">
+                                                <img width="100%" src="/assets/img/ui/no-face.png" alt="Nothing's Finer Than Being in Your Diner">
+                                                <span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+                                            </div>
+                                            <h5 class="mb-2">John Smith</h5>
+
+                                            <!-- TRUNCATE 150 chars -->
+                                            <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit...</p>
+                                            <span class="anchor-link">Read More
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </article>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -344,10 +486,7 @@
                     <div class="row">
                         <div class="col-6">
                             <small>
-
-                                <!-- &copy; 2017&nbsp;&nbsp;&nbsp; -->
-                                
-<!-- <a data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a> --><a href="/docs/">Docs</a>
+                                <a href="/docs/">Docs</a>
                             </small>
                         </div>
                         <div class="col-6 text-right">

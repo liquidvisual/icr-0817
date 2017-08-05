@@ -13,8 +13,14 @@
     <!-- PAGE LOADER -->
     <div id="lv-page-loader" class="lv-page-loader">
         <div class="lv-page-loader-spinner">
-            <div class="double-bounce-1"></div>
-            <div class="double-bounce-2"></div>
+            <div class="loader-spinner">
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+                <div class="loader-component">
+                    <div class="half-circle"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -22,7 +28,7 @@
     <script>
     var loader = document.getElementById('lv-page-loader');
     loader.style.display = 'flex';
-    // Limit to 3+ seconds of waiting time
+    // Limit to 2+ seconds of waiting time
     setTimeout(function() {
         loader.className += ' force-finish';
     }, 2000);
@@ -244,15 +250,13 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="lv-hero-item-caption pr-xl-5">
-
-                                    <!-- <h1>Heading One</h1> -->
                                     <p class="h4 subheader">Introduction text content, lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 pl-lg-5">
                                 <ul class="block-grid-xs-1 block-grid-condensed">
                                     <li>
-                                        <a class="btn-cta" href="/expertise/expertise-item/">
+                                        <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                             <h3>
                                                 <span class="text">TDP & Income Protection Claims</span>
                                                 <i class="fa fa-angle-right"></i>
@@ -260,7 +264,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="btn-cta" href="/expertise/expertise-item/">
+                                        <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                             <h3>
                                                 <span class="text">Death & Terminal Illness Claims</span>
                                                 <i class="fa fa-angle-right"></i>
@@ -268,7 +272,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="btn-cta" href="/expertise/expertise-item/">
+                                        <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                             <h3>
                                                 <span class="text">Superannuation & Insurance</span>
                                                 <i class="fa fa-angle-right"></i>
@@ -276,7 +280,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="btn-cta" href="/expertise/expertise-item/">
+                                        <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                             <h3>
                                                 <span class="text">General Insurance</span>
                                                 <i class="fa fa-angle-right"></i>
@@ -284,7 +288,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="btn-cta" href="/expertise/expertise-item/">
+                                        <a class="btn-cta" href="/expertise/death-and-terminal-illness-claims/">
                                             <h3>
                                                 <span class="text">Financial Advice Disputes</span>
                                                 <i class="fa fa-angle-right"></i>
@@ -389,7 +393,7 @@
         </section>
 
         <!-- ABOUT US -->
-        <section class="section inverse has-image-bg pb-0 pb-sm-4" style="background-image: url(/assets/img/content/hero/hero-5.jpg)">
+        <section class="section inverse has-image-bg is-tinted pb-0 pb-sm-4" style="background-image: url(/assets/img/content/hero/hero-5.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -496,10 +500,7 @@
                     <div class="row">
                         <div class="col-6">
                             <small>
-
-                                <!-- &copy; 2017&nbsp;&nbsp;&nbsp; -->
-                                
-<!-- <a data-toggle="collapse" href="#sitemap">Site Map&nbsp;<i class="fa fa-angle-down"></i></a> --><a href="/docs/">Docs</a>
+                                <a href="/docs/">Docs</a>
                             </small>
                         </div>
                         <div class="col-6 text-right">
