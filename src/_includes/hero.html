@@ -1,0 +1,61 @@
+{% comment %}
+<!--
+    LIQUIDVISUAL-HERO
+
+    - Updated: 27.06.17
+    - Notes:
+        * .has-height-preset-1 - used for internal pages to set a height
+-->
+{% endcomment %}
+
+{% assign slides = site.data.carousel_slides %}
+
+<!-- HERO WRAPPER -->
+<div class="lv-hero-wrapper">
+
+    <!-- HERO -->
+    <div class="lv-hero">
+
+        <!-- HERO ITEMS -->
+        {% for item in slides %}
+            <div class="lv-hero-item" style="background-image: url('{{ item.image }}')">
+
+                <!-- HERO CAPTION -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="lv-hero-item-caption pr-xl-5">
+                                <p class="h4 subheader">Introduction text content, lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pl-lg-5">
+                            {% include featured_services.html class="block-grid-condensed" %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        {% endfor %}
+
+    </div> <!-- /.lv-hero -->
+
+    {% comment %}
+    <!-- CAROUSEL CONTROLS -->
+    <div class="lv-hero-carousel-controls">
+        <div class="container">
+            <span class="lv-hero-carousel-prev-btn"><i class="fa fa-angle-left"></i></span>
+            <span class="lv-hero-carousel-next-btn"><i class="fa fa-angle-right"></i></span>
+        </div>
+    </div>
+
+    <!-- CAROUSEL BULLETS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="lv-hero-carousel-bullets"></div>
+            </div>
+        </div>
+    </div>
+    {% endcomment %}
+
+</div> <!-- /.lv-hero-wrapper -->

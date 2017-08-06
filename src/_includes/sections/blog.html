@@ -1,0 +1,29 @@
+<!-- SUPERTALK BLOG -->
+<section class="section">
+	<div class="container">
+		<h2 class="text-center">Latest from the blog</h2>
+
+		<ul class="block-grid-md-2 block-grid-lg-4 mb-4">
+			{% for item in site.data.lorem_ipsum limit: 4 %}
+				<li>
+					<a href="/blog/blog-item/" class="btn-tile">
+						<article class="media-article">
+
+							<div class="btn-tile-img mb-3">
+								<img width="100%" src="/assets/img/content/placeholder-thumb-{{forloop.index}}.jpg" alt="{{ item.title }}">
+								<span class="btn-tile-bg" style="background-image: url(/assets/img/content/placeholder-thumb-{{forloop.index}}.jpg)"></span>
+							</div>
+
+							<h5 class="mb-2">{{ item.title }}</h5>
+							<p><date>{{ item.date }}</date></p>
+							<p class="mb-1">{{ item.body | truncate: 150 }}</p>
+							<span class="anchor-link">Read More <i class="fa fa-angle-right"></i></span>
+						</article>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+
+		<p class="text-center"><a href="/blog/" class="btn btn-dark btn-primary">More Blogs <i class="fa fa-angle-right"></i></a></p>
+	</div>
+</section>

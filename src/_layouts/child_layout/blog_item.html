@@ -1,0 +1,28 @@
+---
+layout: base__page_sidebar
+---
+
+{% assign news = site.data.lorem_ipsum %}
+
+<p class="text-muted"><i class="fa fa-clock-o"></i> <date>12 AUGUST 2015</date><span class="mx-2">|</span><i class="fa fa-user"></i> <a href="/our-people/our-people-item/">John Smith</a></p>
+<br>
+<p class="image-right"><img width="100%" src="http://placehold.it/350x260" alt="..."></p>
+
+<!-- WYSIWYG -->
+<div class="wysiwyg mb-4">
+    {{ content }}
+</div>
+
+{% contentfor sidebar %}
+    <!-- RECENT POSTS -->
+    <h3 class="mb-4">Recent Posts</h3>
+    <div class="mr-md-3">
+        {% for item in news limit: 3 %}
+            <a href="/news/news-item/">
+                <h4 class="h6 mb-0 text-capitalize">{{ item.title }}</h4>
+                <small><date class="text-uppercase text-muted">{{ item.date }}</date></small>
+            </a>
+            <hr>
+        {% endfor %}
+    </div>
+{% endcontentfor %}

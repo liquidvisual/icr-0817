@@ -1,0 +1,14 @@
+{% assign featured = site.data.sitemap[2].children | where: "featured", true %}
+{% assign classes = include.class %}
+
+<ul class="block-grid-xs-1 {{ classes }}">
+    {% for item in featured %}
+        <li>
+            <a data-equal-height class="btn-cta" href="/services/conflict-resolution/">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.desc }}</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,197 @@
+/*
+    HERO.CSS
+
+    - Updated: 27.06.17
+    - Notes:
+        * liquidvisual recommends bxSlider for hero carousels
+        * fixed overflow problem when removing JS
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+
+$hero-sm-height:            auto; //rem-calc(650); // IMPORTANT: if carousel slides, you need a fixed height
+$hero-md-height:            auto;
+$hero-lg-height:            rem-calc(650);
+$hero-xl-height:            rem-calc(720); //
+$hero-xxl-height:           rem-calc(720);
+
+$hero-sm-height-preset-1:   rem-calc(200); // Appears on product landing
+$hero-md-height-preset-1:   rem-calc(434);
+$hero-lg-height-preset-1:   rem-calc(434);
+
+//-----------------------------------------------------------------
+// HERO WRAPPER
+// Used to align the controls relative to the container
+//-----------------------------------------------------------------
+
+.lv-hero-wrapper {
+    position: relative;
+}
+
+//-----------------------------------------------------------------
+// HERO
+//-----------------------------------------------------------------
+
+.lv-hero {
+    overflow: hidden; // causes problems without JS
+    height: $hero-sm-height;
+
+    @include media-breakpoint-up(md) {
+        height: $hero-md-height;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: $hero-lg-height;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: $hero-xl-height;
+    }
+
+    //=========================================
+    // HAS HEIGHT PRESET 1
+    //=========================================
+
+    &.has-height-preset-1 {
+        height: $hero-sm-height-preset-1;
+
+        @include media-breakpoint-up(md) {
+            height: $hero-md-height-preset-1;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: $hero-lg-height-preset-1;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// HERO ITEM (Slides)
+//-----------------------------------------------------------------
+
+.lv-hero-item {
+    display: flex !important; // bx override
+    align-items: center;
+    width: 100%; // need
+    height: 100%;
+    padding: $spacer*2 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+        padding: calc(#{$header-body-md-height} + #{$spacer*2.5}) 0 $spacer*2.5 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: $header-body-lg-height 0 0 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: $header-body-xl-height 0 0 0;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(black, 0.26);
+    }
+}
+
+//-----------------------------------------------------------------
+// HERO CAPTION
+//-----------------------------------------------------------------
+
+.lv-hero-item-caption {
+    color: white;
+}
+
+//-----------------------------------------------------------------
+// IS ALTERNATE (INNER PAGES)
+//-----------------------------------------------------------------
+
+.has-height-preset-1 .lv-hero-item {
+    align-items: flex-end;
+    padding-bottom: $spacer; // since there's no carousel next/prev
+}
+
+//-----------------------------------------------------------------
+// CAROUSEL CONTROLS
+//-----------------------------------------------------------------
+
+.lv-hero-carousel-controls {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    height: 0;
+    z-index: 100;
+
+    > .container {
+        position: relative;
+    }
+
+    //=========================================
+    // NEXT / PREV BUTTONS
+    //=========================================
+
+    .lv-hero-carousel-prev-btn,
+    .lv-hero-carousel-next-btn {
+        position: absolute;
+        width: rem-calc(50);
+        height: rem-calc(50);
+        line-height: rem-calc(50);
+        cursor: pointer;
+        text-align: center;
+        font-family: "FontAwesome";
+        font-size: rem-calc(50);
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+    }
+
+    .lv-hero-carousel-prev-btn {
+        left: $container-gutter/2;
+    }
+
+    .lv-hero-carousel-next-btn {
+        right: $container-gutter/2;
+    }
+}
+
+//-----------------------------------------------------------------
+// HERO ADDITION
+//-----------------------------------------------------------------
+
+// .hero-addition {
+//     @include media-breakpoint-up(md) {
+//         display: flex;
+//         align-items: center;
+//         position: absolute;
+//         bottom: 0;
+//         width: 100%;
+//         min-height: $header-body-lg-height + $header-bottom-lg-height;
+//         background: $gray-lightest; //rgba(white, 0.8);
+//         -webkit-backdrop-filter: blur(5px);
+//         backdrop-filter: blur(5px);
+//     }
+// }
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------

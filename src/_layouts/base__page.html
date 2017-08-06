@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+{% include hero_secondary.html %}
+
+{% if page.breadcrumbs %}
+	{% include snippets/breadcrumb.html %}
+{% endif %}
+
+<!-- CONTENT -->
+<main class="content">
+
+    <!-- BODY -->
+    <section class="section">
+        <div class="container">
+        	{{ content }}
+        </div>
+    </section>
+
+    {% contentblock content_additional no-convert %}
+</main>

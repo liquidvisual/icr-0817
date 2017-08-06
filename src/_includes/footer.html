@@ -1,0 +1,48 @@
+{% assign settings = site.data.settings %}
+{% assign offices = settings.offices %}
+
+<!-- FOOTER BODY -->
+<section class="global-footer-body">
+	<div class="container">
+
+		<!-- HEADING -->
+		<div class="d-flex align-items-center">
+			<h4>{{ site.data.settings.company }}</h4>
+			{% include snippets/social_media.html %}
+		</div>
+
+		<!-- CONTACT DETAILS -->
+		<div class="row">
+			<div class="col-md-8 col-lg-6">
+				<ul class="block-grid-xs-1 block-grid-md-2 global-footer-list">
+					{% for item in offices %}
+						<li>
+							<a class="d-flex" href="tel:{{ item.phone }}"><i class="fa fa-phone"></i><span class="text">{{ item.phone }}</span></a>
+							<a class="d-flex" href="tel:{{ item.email }}"><i class="fa fa-envelope"></i><span class="text">{{ item.email }}</span></a>
+							<a class="d-flex" href="tel:{{ item.address }}"><i class="fa fa-map-marker"></i><span class="text">{{ item.address }}</span></a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER BOTTOM -->
+<section class="global-footer-bottom">
+    <div class="container">
+		<div class="row">
+			<div class="col-6">
+				<small><a href="/docs/">Docs</a></small>
+			</div>
+			<div class="col-6 text-right">
+				<small>
+					<a class="author-logo" target="_blank" href="{{ settings.author.url }}">
+				    	<span class="text">{{ settings.author.description }}</span>&nbsp;&nbsp;
+				    	<img width="20" height="20" src="{{ settings.author.logo }}" alt="Site by {{ settings.author.title }}">
+					</a>
+				</small>
+			</div>
+		</div>
+    </div>
+</section>

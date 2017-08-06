@@ -1,0 +1,32 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Services
+  url: /services/
+  include_children_in_nav: true
+  children:
+    - title: Conflict Resolution
+      url: '#/services/'
+      desc: Arbitration, Mediation,<br>Restorative Practice Conferencing,<br>Adjudication, Facilitation
+      featured: true
+
+    - title: Business Support
+      url: '#/services/'
+      desc: Workshops, Leadership Development,<br>Mentoring, Work Health & Safety<br>Audits & Reviews
+      featured: true
+
+- title: Blog
+  url: /blog/
+
+- title: People
+  url: /people/
+  include_children_in_nav: true
+  children:
+    - title: Deb Black
+      url: /people/people-item/
+
+- title: Contact
+  url: /contact/

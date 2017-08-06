@@ -1,0 +1,30 @@
+---
+layout: base__page
+---
+
+<div class="row justify-content-center">
+	<div class="col-lg-9">
+		<p class="h5 text-center px-xl-5">{{ page.lead }}</p>
+		<div class="spacer mb-4"></div>
+
+		<!-- WYSIWYG -->
+        <div class="wysiwyg text-center">
+            {{ content }}
+        </div>
+
+	</div>
+</div>
+
+{% contentfor content_additional %}
+	<!-- FEATURED SERVICES -->
+	<section class="section section-light">
+		<div class="container">
+			<h2 class="text-center">Our Services</h2>
+			{% include featured_services.html class="block-grid-md-2" %}
+		</div>
+	</section>
+
+	{% include sections/blog.html %}
+
+	<div class="spacer mb-4"></div>
+{% endcontentfor %}

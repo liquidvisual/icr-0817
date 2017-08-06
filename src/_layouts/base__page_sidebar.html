@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+{% include hero_secondary.html %}
+
+{% if page.breadcrumbs %}
+    {% include snippets/breadcrumb.html %}
+{% endif %}
+
+<!-- CONTENT -->
+<main class="content">
+
+    <!-- BODY -->
+    <section class="section">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-9 push-lg-3">
+                    <div class="ml-lg-5">
+                        <h1 class="display-2 mb-4">{{ page.title }}</h1>
+                        <p class="h5">{{ page.lead }}</p>
+                        {{ content }}
+                    </div>
+                </div>
+                <div class="col-lg-3 pull-lg-9">
+                    <aside class="sidebar">
+                        {% contentblock sidebar no-convert %}
+                        {% ifnothascontent sidebar %}
+                            {% include snippets/side_nav.html exclude_top_level=true %}
+                        {% endifnothascontent %}
+
+                        {% contentblock sidebar_additional no-convert %}
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% contentblock content_additional no-convert %}
+</main>

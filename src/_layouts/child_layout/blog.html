@@ -1,0 +1,30 @@
+---
+layout: base__page
+---
+
+<ul class="block-grid-md-2 block-grid-lg-3 mb-5">
+	{% for item in site.data.lorem_ipsum limit: 9 %}
+		<li>
+			<a href="/blog/blog-item/" class="btn-tile">
+				<article class="media-article">
+
+					<!-- IMAGE -->
+					<div class="btn-tile-img mb-3">
+						<img width="100%" src="/assets/img/content/placeholder-thumb-1.jpg" alt="{{ item.title }}">
+						<span class="btn-tile-bg" style="background-image: url(/assets/img/content/placeholder-thumb-1.jpg)"></span>
+					</div>
+
+					<!-- HEADING -->
+					<h5 class="mb-2">{{ item.title }}</h5>
+					<p><date>{{ item.date }}</date></p>
+
+					<!-- BODY (TRUNCATE 150 chars) -->
+					<p class="mb-1">{{ item.body | truncate: 150 }}</p>
+					<span class="anchor-link">Read More <i class="fa fa-angle-right"></i></span>
+				</article>
+			</a>
+		</li>
+	{% endfor %}
+</ul>
+
+{% include snippets/pagination.html %}

@@ -1,0 +1,27 @@
+---
+layout: base__page
+---
+
+<ul class="block-grid-md-2 block-grid-lg-4 mb-5">
+	{% for item in site.data.lorem_ipsum %}
+		<li>
+			<a href="/people/people-item/" class="btn-tile">
+				<article class="media-article">
+
+					<!-- IMAGE -->
+					<div class="btn-tile-img mb-3">
+						<img width="100%" src="/assets/img/ui/no-face.png" alt="{{ item.title }}">
+						<span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
+					</div>
+
+					<!-- HEADING -->
+					<h5 class="mb-2">Deb Black</h5>
+
+					<!-- BODY (TRUNCATE 150 chars) -->
+					<p class="mb-1">{{ item.body | truncate: 150 }}</p>
+					<span class="anchor-link">Read More <i class="fa fa-angle-right"></i></span>
+				</article>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

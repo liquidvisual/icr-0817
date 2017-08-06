@@ -1,0 +1,85 @@
+/*
+    TEXT-EDITOR.CSS
+
+    - Last updated: 06.10.16
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// WYSIWYG
+//-----------------------------------------------------------------
+
+//=========================================
+// ANCHORS
+//=========================================
+
+.wysiwyg a {
+	color: $brand-primary;
+	font-weight: 600;
+
+	&:hover {
+		color: lighten($brand-primary, 5%);
+	}
+
+	&:after {
+		content: "\f105";
+		font-family: 'FontAwesome';
+		margin-left: 3px;
+	}
+}
+
+//=========================================
+// LISTS
+//=========================================
+
+.wysiwyg li {
+	margin-bottom: $spacer/2;
+}
+
+//-----------------------------------------------------------------
+// IMAGE ALIGNMENT
+//-----------------------------------------------------------------
+
+.image-left {
+	margin-bottom: $spacer;
+
+	@include media-breakpoint-down(sm) {
+	    width: 100%;
+	}
+
+	@include media-breakpoint-up(md) {
+	    float: left;
+	    margin: $spacer $spacer 0 0;
+	}
+}
+
+.image-right {
+	margin-bottom: $spacer;
+
+	@include media-breakpoint-down(sm) {
+	    width: 100%;
+	}
+
+	@include media-breakpoint-up(md) {
+	    float: right;
+	    margin: 0 0 $spacer $spacer;
+	}
+}
+
+//-----------------------------------------------------------------
+// FONT FAMILY
+//-----------------------------------------------------------------
+
+.font-family-serif {
+	font-family: $font-family-serif;
+}
+
+.font-family-sans-serif {
+	font-family: $font-family-sans-serif;
+}
+
+//=========================================
+//
+//=========================================

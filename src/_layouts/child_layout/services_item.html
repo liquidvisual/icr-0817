@@ -1,0 +1,19 @@
+---
+layout: base__page_sidebar
+---
+
+<!-- WYSIWYG -->
+<div class="wysiwyg mb-4">
+    {{ content }}
+</div>
+
+<h3>Also in this section</h3>
+<hr>
+<p><h3><a href="/">Another Page</a></h3></p>
+<p><h3><a href="/">Second Level Page</a></h3></p>
+<p><h3><a href="/">Page Example</a></h3></p>
+<br>
+
+{% contentfor content_additional %}
+	{% include sections/contact.html %}
+{% endcontentfor %}
