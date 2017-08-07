@@ -17,11 +17,9 @@
 <nav class="breadcrumb">
     <div class="container">
           {% for crumb in crumbs offset: 1 %}
-              {% if forloop.last %}
-
-              {% else %}
+              {% unless forloop.last %}
                   <a class="breadcrumb-item" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}"><i class="fa fa-angle-left"></i>&nbsp; Back to <span class="text-capitalize">{{ crumb | replace:'-',' ' }}</span></a>
-              {% endif %}
+              {% endunless %}
           {% endfor %}
     </div>
 </nav>

@@ -9,12 +9,12 @@
   include_children_in_nav: true
   children:
     - title: Conflict Resolution
-      url: '#/services/'
+      url: /services/conflict-resolution/
       desc: Arbitration, Mediation,<br>Restorative Practice Conferencing,<br>Adjudication, Facilitation
       featured: true
 
     - title: Business Support
-      url: '#/services/'
+      url: /services/conflict-resolution/
       desc: Workshops, Leadership Development,<br>Mentoring, Work Health & Safety<br>Audits & Reviews
       featured: true
 

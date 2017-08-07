@@ -8,19 +8,22 @@
 		<h2 class="text-center">{{ title }}</h2>
 		<div class="row justify-content-center">
 			<div class="col-xl-{{ columns }}">
-				<ul class="block-grid-md-{{limit}} mb-4">
+				<ul class="block-grid-md-2 block-grid-lg-{{limit}} mb-0">
 					{% for item in site.data.lorem_ipsum limit: limit %}
 						<li>
 							<a href="/our-people/our-people-item/" class="btn-tile">
 								<article class="media-article">
 
+									<!-- IMAGE -->
 									<div class="btn-tile-img mb-3">
 										<img width="100%" src="/assets/img/ui/no-face.png" alt="{{ item.title }}">
 										<span class="btn-tile-bg" style="background-image: url(/assets/img/ui/no-face.png)"></span>
 									</div>
 
+									<!-- HEADER -->
 									<h5 class="mb-2">John Smith <i class="fa fa-angle-right"></i></h5>
-									<!-- TRUNCATE 150 chars -->
+
+									<!-- BODY (TRUNCATE 150 chars) -->
 									<p class="mb-1">{{ item.body | truncate: 150 }} <span class="anchor-link">Read More <i class="fa fa-angle-right"></i></span></p>
 
 								</article>

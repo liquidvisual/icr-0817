@@ -1,7 +1,7 @@
 ---
 layout: child_layout/blog_item
 title: What's the Deal with Airline Peanuts?
-title_override: Supertalk Blog
+title_override: Blog
 permalink: /blog/blog-item/
 hero: /assets/img/content/hero/hero-6.jpg
 breadcrumbs: true
